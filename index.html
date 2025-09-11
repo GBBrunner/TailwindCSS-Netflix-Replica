@@ -7,27 +7,61 @@
   <title>Document</title>
   <link href="/src/style.css" rel="stylesheet">
 </head>
-<body class="m-0 p-0 bg-no-repeat bg-cover bg-center box bg-[url(images/bgAlt.jpg)] h-[100vh] w-screen wrapper flex">
+<body class="m-0 p-0 bg-no-repeat bg-cover bg-center box bg-[url(images/bgAlt.jpg)] w-screen h-screen wrapper flex transition duration-400 ease-in-out">
   <div class="leftnav rounded-4xl flex p-6 h-screen items-center justify-center">
     <ul class="flex flex-col space-y-4 rounded-full items-center bg-white/20 backdrop-blur-md p-6 border-t-1 border-l-1
     border-white/50">
-      <li><a class="fa fa-home text-2xl rounded-full text-white p-3 hover:bg-red-700"></a></li>
-      <li><a class="fa fa-user text-2xl rounded-full text-white p-3 hover:bg-red-700"></a></li>
-      <li><a class="fa fa-envelope text-2xl rounded-full text-white p-3 hover:bg-red-700"></a></li>
-      <li><a class="fa fa-bell text-2xl rounded-full text-white p-3 hover:bg-red-700"></a></li>
-      <li><a class="fa fa-cog text-2xl rounded-full text-white p-3 hover:bg-red-700"></a></li>
-      <li><a class="fa fa-sign-out text-2xl rounded-full text-white p-3 hover:bg-red-700"></a></li>
+      <li><a class="fa fa-home text-2xl rounded-full text-white p-3 bg-purple-700 hover:bg-white hover:text-purple-500 hover:border-2 hover:border-purple-700"></a></li>
+      <li><a class="fa fa-user text-2xl rounded-full text-white p-3 bg-purple-700 hover:bg-white hover:text-purple-500 hover:border-2 hover:border-purple-700"></a></li>
+      <li><a class="fa fa-envelope text-2xl rounded-full text-white p-3 bg-purple-700 hover:bg-white hover:text-purple-500 hover:border-2 hover:border-purple-700"></a></li>
+      <li><a class="fa fa-bell text-2xl rounded-full text-white p-3 bg-purple-700 hover:bg-white hover:text-purple-500 hover:border-2 hover:border-purple-700"></a></li>
+      <li><a class="fa fa-cog text-2xl rounded-full text-white p-3 bg-purple-700 hover:bg-white hover:text-purple-500 hover:border-2 hover:border-purple-700"></a></li>
+      <li><a class="fa fa-sign-out text-2xl rounded-full text-white bg-purple-700 p-3 hover:bg-white hover:text-purple-500 hover:border-2 hover:border-purple-700"></a></li>
     </ul>
   </div>
   
   <div class="main my-8 mr-8 w-full grid grid-cols-5 bg-white/20 backdrop-blur-md rounded-2xl border-t-1 border-l-1 border-white/50">
-    <div class="lcol">Something</div>
-    <div class="rcol col-span-4 bg-white/10 border-l-1 border-white/20 p-8" >
+    <div class="lcol flex flex-col justify-between align-middle">
+      <div class="bg-teal-600 h-15">
+
+      </div>
+      <div class="w-80 items-center">
+        <div class="h-15 flex-2 bg-yellow-300 rounded-xl border-white border-2 hover:flex-3"></div>
+        <div class="h-15 flex-2 bg-yellow-300 rounded-xl hover:flex-3"></div>
+        <div class="h-15 flex-2 bg-yellow-300 rounded-xl hover:flex-3"></div>
+      </div>
+
+    </div>
+    <div class="rcol col-span-4 bg-white/10 border-l-1 border-white/20 p-8 flex flex-col justify-evenly" >
+      <div class="boxparent">
+        <div class="gamebox game2 bg-cover rounded-2xl h-[18rem] p-3 flex flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(images/game9.jpg)] hover:flex-grow">
+          <div class="flex justify-between flex-wrap">
+            <div>
+              <button class="text-1xl font-bold rounded-full text-white py-2 px-3 bg-purple-700 hover:bg-white hover:border-2 hover:text-purple-900 hover:border-purple-700 ">Play Now</button>
+              <button class="text-2xl font-bold rounded-full text-white py-1 px-2 bg-purple-300 hover:bg-purple-700 hover:border-1 hover:border-purple-200 ">+</button>
+            </div>
+            <div class="hidden lg:flex flex-row w-90">
+              <div class="h-15 flex-2 bg-[url(images/game9.jpg)] rounded-xl ml-5 border-white border-2 hover:flex-3"></div>
+              <div class="h-15 flex-2 bg-[url(images/game10.jpg)] rounded-xl ml-5 hover:flex-3"></div>
+              <div class="h-15 flex-2 bg-[url(images/game11.jpg)] rounded-xl ml-5 hover:flex-3"></div>
+            </div>
+
+          </div>
+          <!-- <div class="desc flex justify-between items-center">
+            <section class="flex flex-col text-white">
+              <span class="flex flex-col text-white">Tetris</span>
+              <span class="stats">1985 | Rated E | 100hrs</span>
+            </section>
+            <i class="fa fa-ellipsis-v text-white"></i>
+          </div> -->
+        </div>
+      </div>
       <div class ="title mb-4 text-3xl text-white">Recommended Games</div>
       <div class="boxparent grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-        <div class="moviebox movie2 bg-cover rounded-2xl h-[12rem] p-3 flex flex-col justify-end 
-        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(images/movie1.jpg)] hover:flex-grow">
+        <div class="gamebox game2 bg-cover rounded-2xl h-[12rem] p-3 flex flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(images/game1.jpg)] hover:flex-grow">
           <div class="desc flex justify-between items-center">
             <section class="flex flex-col text-white">
               <span class="flex flex-col text-white">Tetris</span>
@@ -36,8 +70,8 @@
             <i class="fa fa-ellipsis-v text-white"></i>
           </div>
         </div>
-        <div class="moviebox bg-cover rounded-2xl h-[12rem] p-3 flex flex-col justify-end 
-        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(images/movie2.jpg)]">
+        <div class="gamebox bg-cover rounded-2xl h-[12rem] p-3 flex flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(images/game2.jpg)]">
           <div class="desc flex justify-between items-center">
             <section class="flex flex-col text-white">
               <span class="flex flex-col text-white">Portal 2</span>
@@ -46,8 +80,8 @@
             <i class="fa fa-ellipsis-v text-white"></i>
           </div>
         </div>
-        <div class="moviebox bg-cover rounded-2xl h-[12rem] p-3 flex flex-col justify-end 
-        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(images/movie3.jpg)]">
+        <div class="gamebox bg-cover rounded-2xl h-[12rem] p-3 flex flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(images/game3.jpg)]">
           <div class="desc flex justify-between items-center">
             <section class="flex flex-col text-white">
               <span class="flex flex-col text-white">Skyrim</span>
@@ -56,8 +90,8 @@
             <i class="fa fa-ellipsis-v text-white"></i>
           </div>
         </div>
-        <div class="moviebox bg-cover rounded-2xl h-[12rem] p-3 flex flex-col justify-end 
-        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(images/movie4.jpg)]">
+        <div class="gamebox bg-cover rounded-2xl h-[12rem] p-3 flex flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(images/game4.jpg)]">
           <div class="desc flex justify-between items-center">
             <section class="flex flex-col text-white">
               <span class="flex flex-col text-white">Minecraft</span>
@@ -69,6 +103,55 @@
        
 
       </div>
+
+      <div class ="title mb-4 text-3xl text-white">Featured Titles</div>
+      <div class="boxparent grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="gamebox game2 bg-cover rounded-2xl h-[9rem] p-3 flex flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(images/game5.jpg)] hover:flex-grow">
+          <div class="desc flex justify-between items-center">
+            <section class="flex flex-col text-white">
+              <span class="flex flex-col text-white">Majora's Mask</span>
+              <span class="stats">2000 | Rated E | 22hrs</span>
+            </section>
+            <i class="fa fa-ellipsis-v text-white"></i>
+          </div>
+        </div>
+        <div class="gamebox bg-cover rounded-2xl h-[9rem] p-3 flex flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(images/game6.jpg)]">
+          <div class="desc flex justify-between items-center">
+            <section class="flex flex-col text-white">
+              <span class="flex flex-col text-white">Halo Infinite</span>
+              <span class="stats">2021 | Rated T | 26hrs</span>
+            </section>
+            <i class="fa fa-ellipsis-v text-white"></i>
+          </div>
+        </div>
+        <div class="gamebox bg-cover rounded-2xl h-[9rem] p-3 flex flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(images/game7.jpg)]">
+          <div class="desc flex justify-between items-center">
+            <section class="flex flex-col text-white">
+              <span class="flex flex-col text-white">Outer Wilds</span>
+              <span class="stats">2011 | Rated M | 22min</span>
+            </section>
+            <i class="fa fa-ellipsis-v text-white"></i>
+          </div>
+        </div>
+        <div class="gamebox bg-cover rounded-2xl h-[9rem] p-3 flex flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(images/game8.jpg)]">
+          <div class="desc flex justify-between items-center">
+            <section class="flex flex-col text-white">
+              <span class="flex flex-col text-white">Mega Man X</span>
+              <span class="stats">1993 | Rated T | 4hrs</span>
+            </section>
+            <i class="fa fa-ellipsis-v text-white"></i>
+          </div>
+        </div>
+       
+
+      </div>
+
+
     </div>
   </div>
 
