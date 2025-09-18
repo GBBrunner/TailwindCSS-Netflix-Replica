@@ -8,7 +8,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="/src/style.css" rel="stylesheet">
 </head>
-<body h-screen class="m-0 p-0 bg-no-repeat bg-fixed bg-cover bg-center box bg-[url(src/images/backgrounds/bgAlt.jpg)] w-screen wrapper flex transition duration-400 ease-in-out gap-8">
+<body h-screen class="m-0 p-0 bg-no-repeat bg-fixed bg-cover bg-center box bg-[url(src/images/bgAlt.jpg)] w-screen wrapper flex transition duration-400 ease-in-out gap-8">
+  <!-- The fixed navbar is now given a specific width (w-24). -->
   <div class="leftnav fixed px-[4rem] top-0 left-0 z-10 w-24 h-screen flex items-center justify-center">
     <ul class="flex flex-col space-y-4 rounded-full items-center bg-white/20 backdrop-blur-md p-4 border-t-1 border-l-1">
       <li><a class="fa fa-home text-2xl rounded-full text-white p-3 bg-purple-700 hover:bg-white hover:text-purple-500 hover:border-2 hover:border-purple-700"></a></li>
@@ -19,183 +20,155 @@
       <li><a class="fa fa-sign-out text-2xl rounded-full text-white bg-purple-700 p-3 hover:bg-white hover:text-purple-500 hover:border-2 hover:border-purple-700"></a></li>
     </ul>
   </div>
-  <div class="main min-h-screen my-8 mr-8 w-full grid grid-cols-1 lg:grid-cols-5 rounded-2xl border-t border-l border-white/50 bg-white/20 backdrop-blur-md ml-36">
+  
+  <div class="main min-h-screen my-8 mr-8 w-full grid grid-cols-5 rounded-2xl border-t-1 border-l-1 border-white/50 bg-white/20 backdrop-blur-md ml-36  ">
+    <div class="lcol flex flex-col justify-between align-middle">
+      <div class="bg-teal-600 h-25">
 
-    <!-- Left Column -->
-    <div class="lcol flex flex-col justify-between col-span-1 lg:col-span-1 min-w-0">
-      <div class="flex flex-col">
-        <a target="_top" href="https://www.flamingtext.com/">
-          <img src="https://blog.flamingtext.com/blog/2025/09/13/flamingtext_com_1757797980_913668622.png"
-              alt="Logo Design by FlamingText.com"
-              title="Logo Design by FlamingText.com"
-              class="max-w-full h-auto">
-        </a>
-        <div class="text-white text-xl">
-          <ul>
-            <li class="my-6 pl-4 flex items-center gap-2">
-              <span class="fa fa-bell"></span>
-              <span>Browse</span>
-            </li>
-            <li class="my-6 pl-4 flex items-center gap-2">
-              <span class="fa fa-bell"></span>
-              <span>Wishlist</span>
-            </li>
-            <li class="my-6 pl-4 flex items-center gap-2">
-              <span class="fa fa-calendar"></span>
-              <span>Coming Soon</span>
-            </li>
-          </ul>
-        </div>
       </div>
-      <div class="flex flex-col items-center p-4 border-white/30">
-        <p class="title mb-4 text-2xl lg:text-3xl text-white text-center">Racing Games 🏎️</p>
+      <div class="flex flex-col h-140 items-center p-6 border-t-1 border-l-1">
+        <p class="title mb-4 text-3xl text-white">Racing Games 🏎️</p>
+        <div class="w-65 flex-2 bg-[url(src/images/game12.jpg)] rounded-xl ml-5 mb-6 hover:flex-3"></div>
+        <div class="w-65 flex-2 bg-[url(src/images/game13.jpg)] rounded-xl ml-5 mb-6 hover:flex-3"></div>
+        <div class="w-65 flex-2 bg-[url(src/images/game14.jpg)] rounded-xl ml-5 mb-6 hover:flex-3"></div>
+      </div>
 
-        <div class="w-full h-40 sm:w-48 md:w-56 lg:w-64 max-w-full bg-[url(src/images/backgrounds/game12.jpg)] bg-cover rounded-xl mb-6"></div>
-        <div class="w-full h-40 sm:w-48 md:w-56 lg:w-64 max-w-full bg-[url(src/images/backgrounds/game13.jpg)] bg-cover rounded-xl mb-6"></div>
-        <div class="w-full h-40 sm:w-48 md:w-56 lg:w-64 max-w-full bg-[url(src/images/backgrounds/game14.jpg)] bg-cover rounded-xl mb-6"></div>
-      </div>
     </div>
-    <div class="rcol bg-white/10 border-t lg:border-t-0 lg:border-l border-white/20 col-span-1 lg:col-span-4 p-8 flex flex-col justify-evenly">
-      <div class="bg-cover h-auto p-3 flex flex-col justify-between flex-wrap">
-            <div class="flex justify-between flex-wrap">
-              <div>
+    
+    <div class="rcol bg-white/10 border-l-1 border-white/20 col-span-4 p-8 flex flex-col justify-evenly" >
+        <div class="bg-cover h-auto p-3 flex flex-col justify-between flex-wrap">
+          <div class="flex justify-between flex-wrap">
+            <div>
+              <input type="search" placeholder="  Search . . ." class="rounded-full border-white  bg-white/4 border-l-1 border-t-1 text-white bold placeholder:text-white placeholder:pl-2">
+            </div>
+            <div class="hidden lg:flex flex-row w-90">
+              <a class="fa fa-bell text-lg rounded-full text-white bg-purple-700 p-2 hover:bg-white hover:text-purple-500 hover:border-2 hover:border-purple-700"></a>
+              <div class="rounded-full bg-white/20 backdrop-blur w-60">
+                <img src="src/images/game10.jpg" class="w-10 rounded-full h-10 overflow-hidden object-cover">
                 <div>
-                  <a class="text-2xl hover:text-3xl font-bold rounded-full pr-3 text-white">&lt;</a>
-                  <a class="text-2xl hover:text-3xl font-bold rounded-full pr-3 text-white">&gt;</a>
-                  <input type="search" placeholder="  Search . . ." class="rounded-full border-white  bg-white/4 border-l-1 border-t-1 text-white bold placeholder:text-white placeholder:pl-2">
-                </div>
-                
-              </div>
-              <div class="hidden lg:flex flex-row w-60 justify-between">
-                <a class="fa fa-bell text-lg rounded-full text-white bg-purple-700 p-2 hover:bg-white hover:text-purple-500 hover:border-2 hover:border-purple-700"></a>
-                <div class="rounded-full bg-white/20 backdrop-blur w-40 flex justify-between pr-2">
-                  <img src="src/images/profiles/pfp1.jpg" class="w-10 border-purple-700 border-r-4 border-b-2 rounded-full h-10 overflow-hidden object-cover">
-                  <div>
-                    <p>Samantha G.</p>
-                    <p>@Samantha</p>
-                  </div>
+                  <p>Samantha G.</p>
+                  <p>@Samantha</p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-        <div class="boxparent">
-          <div class="gamebox game2 bg-cover rounded-2xl h-[18rem] p-3 flex flex-col justify-end 
-          bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/backgrounds/game9.jpg)] hover:flex-grow">
-            <div class="flex justify-between flex-wrap">
-              <div>
-                <button class="text-1xl font-bold rounded-full text-white py-2 px-3 bg-purple-700 hover:bg-white hover:border-2 hover:text-purple-900 hover:border-purple-700 ">Play Now</button>
-                <button class="text-2xl font-bold rounded-full text-white py-1 px-2 bg-purple-300 hover:bg-purple-700 hover:border-1 hover:border-purple-200 ">+</button>
-              </div>
-              <div class="hidden lg:flex flex-row w-90">
-                <div class="h-15 flex-2 bg-[url(src/images/backgrounds/game9.jpg)] rounded-xl ml-5 border-white border-2 hover:flex-3"></div>
-                <div class="h-15 flex-2 bg-[url(src/images/backgrounds/game10.jpg)] rounded-xl ml-5 hover:flex-3"></div>
-                <div class="h-15 flex-2 bg-[url(src/images/backgrounds/game11.jpg)] rounded-xl ml-5 hover:flex-3"></div>
-              </div>
-
+      <div class="boxparent">
+        <div class="gamebox game2 bg-cover rounded-2xl h-[18rem] p-3 flex flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/game9.jpg)] hover:flex-grow">
+          <div class="flex justify-between flex-wrap">
+            <div>
+              <button class="text-1xl font-bold rounded-full text-white py-2 px-3 bg-purple-700 hover:bg-white hover:border-2 hover:text-purple-900 hover:border-purple-700 ">Play Now</button>
+              <button class="text-2xl font-bold rounded-full text-white py-1 px-2 bg-purple-300 hover:bg-purple-700 hover:border-1 hover:border-purple-200 ">+</button>
             </div>
+            <div class="hidden lg:flex flex-row w-90">
+              <div class="h-15 flex-2 bg-[url(src/images/game9.jpg)] rounded-xl ml-5 border-white border-2 hover:flex-3"></div>
+              <div class="h-15 flex-2 bg-[url(src/images/game10.jpg)] rounded-xl ml-5 hover:flex-3"></div>
+              <div class="h-15 flex-2 bg-[url(src/images/game11.jpg)] rounded-xl ml-5 hover:flex-3"></div>
+            </div>
+
           </div>
         </div>
-        <div class ="title mb-4 text-3xl text-white">Recommended Games</div>
-        <div class="boxparent grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          
-          <div class="gamebox game2 bg-cover rounded-2xl h-[12rem] p-3 flex flex-2 flex-col justify-end 
-          bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/backgrounds/game1.jpg)] hover:flex-3">
-            <div class="desc flex justify-between items-center">
-              <section class="flex flex-col text-white">
-                <span class="flex flex-col text-white">Tetris</span>
-                <span class="stats">1985 | Rated E | 100hrs</span>
-              </section>
-              <i class="fa fa-ellipsis-v text-white"></i>
-            </div>
-          </div>
-          
-          <div class="gamebox bg-cover rounded-2xl h-[12rem] p-3 flex flex-col justify-end 
-          bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/backgrounds/game2.jpg)]">
-            <div class="desc flex justify-between items-center">
-              <section class="flex flex-col text-white">
-                <span class="flex flex-col text-white">Portal 2</span>
-                <span class="stats">2011 | Rated E10+ | 8hrs</span>
-              </section>
-              <i class="fa fa-ellipsis-v text-white"></i>
-            </div>
-          </div>
-          
-          <div class="gamebox bg-cover rounded-2xl h-[12rem] p-3 flex flex-col justify-end 
-          bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/backgrounds/game3.jpg)]">
-            <div class="desc flex justify-between items-center">
-              <section class="flex flex-col text-white">
-                <span class="flex flex-col text-white">Skyrim</span>
-                <span class="stats">2011 | Rated M | 120hr</span>
-              </section>
-              <i class="fa fa-ellipsis-v text-white"></i>
-            </div>
-          </div>
-          
-          <div class="gamebox bg-cover rounded-2xl h-[12rem] p-3 flex flex-col justify-end 
-          bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/backgrounds/game4.jpg)]">
-            <div class="desc flex justify-between items-center">
-              <section class="flex flex-col text-white">
-                <span class="flex flex-col text-white">Minecraft</span>
-                <span class="stats">2009 | Rated E | 15hr</span>
-              </section>
-              <i class="fa fa-ellipsis-v text-white"></i>
-            </div>
-          </div>
+      </div>
+      <div class ="title mb-4 text-3xl text-white">Recommended Games</div>
+      <div class="boxparent grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
+        <div class="gamebox game2 bg-cover rounded-2xl h-[12rem] p-3 flex flex-2 flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/game1.jpg)] hover:flex-3">
+          <div class="desc flex justify-between items-center">
+            <section class="flex flex-col text-white">
+              <span class="flex flex-col text-white">Tetris</span>
+              <span class="stats">1985 | Rated E | 100hrs</span>
+            </section>
+            <i class="fa fa-ellipsis-v text-white"></i>
+          </div>
         </div>
-
-        <div class ="title mb-4 text-3xl text-white">Featured Titles</div>
-        <div class="boxparent grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="gamebox game2 bg-cover rounded-2xl h-[9rem] p-3 flex flex-col justify-end 
-          bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/backgrounds/game5.jpg)] hover:flex-grow">
-            <div class="desc flex justify-between items-center">
-              <section class="flex flex-col text-white">
-                <span class="flex flex-col text-white">Majora's Mask</span>
-                <span class="stats">2000 | Rated E | 22hrs</span>
-              </section>
-              <i class="fa fa-ellipsis-v text-white"></i>
-            </div>
-          </div>
-          
-          <div class="gamebox bg-cover rounded-2xl h-[9rem] p-3 flex flex-col justify-end 
-          bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/backgrounds/game6.jpg)]">
-            <div class="desc flex justify-between items-center">
-              <section class="flex flex-col text-white">
-                <span class="flex flex-col text-white">Halo Infinite</span>
-                <span class="stats">2021 | Rated T | 26hrs</span>
-              </section>
-              <i class="fa fa-ellipsis-v text-white"></i>
-            </div>
-          </div>
-          
-          <div class="gamebox bg-cover rounded-2xl h-[9rem] p-3 flex flex-col justify-end 
-          bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/backgrounds/game7.jpg)]">
-            <div class="desc flex justify-between items-center">
-              <section class="flex flex-col text-white">
-                <span class="flex flex-col text-white">Outer Wilds</span>
-                <span class="stats">2011 | Rated 10+ | 22min</span>
-              </section>
-              <i class="fa fa-ellipsis-v text-white"></i>
-            </div>
-          </div>
-          
-          <div class="gamebox bg-cover rounded-2xl h-[9rem] p-3 flex flex-col justify-end 
-          bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/backgrounds/game8.jpg)]">
-            <div class="desc flex justify-between items-center">
-              <section class="flex flex-col text-white">
-                <span class="flex flex-col text-white">Mega Man X</span>
-                <span class="stats">1993 | Rated T | 4hrs</span>
-              </section>
-              <i class="fa fa-ellipsis-v text-white"></i>
-            </div>
-          </div>
         
+        <div class="gamebox bg-cover rounded-2xl h-[12rem] p-3 flex flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/game2.jpg)]">
+          <div class="desc flex justify-between items-center">
+            <section class="flex flex-col text-white">
+              <span class="flex flex-col text-white">Portal 2</span>
+              <span class="stats">2011 | Rated E10+ | 8hrs</span>
+            </section>
+            <i class="fa fa-ellipsis-v text-white"></i>
+          </div>
         </div>
+        
+        <div class="gamebox bg-cover rounded-2xl h-[12rem] p-3 flex flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/game3.jpg)]">
+          <div class="desc flex justify-between items-center">
+            <section class="flex flex-col text-white">
+              <span class="flex flex-col text-white">Skyrim</span>
+              <span class="stats">2011 | Rated M | 120hr</span>
+            </section>
+            <i class="fa fa-ellipsis-v text-white"></i>
+          </div>
+        </div>
+        
+        <div class="gamebox bg-cover rounded-2xl h-[12rem] p-3 flex flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/game4.jpg)]">
+          <div class="desc flex justify-between items-center">
+            <section class="flex flex-col text-white">
+              <span class="flex flex-col text-white">Minecraft</span>
+              <span class="stats">2009 | Rated E | 15hr</span>
+            </section>
+            <i class="fa fa-ellipsis-v text-white"></i>
+          </div>
+        </div>
+       
+      </div>
+
+      <div class ="title mb-4 text-3xl text-white">Featured Titles</div>
+      <div class="boxparent grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="gamebox game2 bg-cover rounded-2xl h-[9rem] p-3 flex flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/game5.jpg)] hover:flex-grow">
+          <div class="desc flex justify-between items-center">
+            <section class="flex flex-col text-white">
+              <span class="flex flex-col text-white">Majora's Mask</span>
+              <span class="stats">2000 | Rated E | 22hrs</span>
+            </section>
+            <i class="fa fa-ellipsis-v text-white"></i>
+          </div>
+        </div>
+        
+        <div class="gamebox bg-cover rounded-2xl h-[9rem] p-3 flex flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/game6.jpg)]">
+          <div class="desc flex justify-between items-center">
+            <section class="flex flex-col text-white">
+              <span class="flex flex-col text-white">Halo Infinite</span>
+              <span class="stats">2021 | Rated T | 26hrs</span>
+            </section>
+            <i class="fa fa-ellipsis-v text-white"></i>
+          </div>
+        </div>
+        
+        <div class="gamebox bg-cover rounded-2xl h-[9rem] p-3 flex flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/game7.jpg)]">
+          <div class="desc flex justify-between items-center">
+            <section class="flex flex-col text-white">
+              <span class="flex flex-col text-white">Outer Wilds</span>
+              <span class="stats">2011 | Rated 10+ | 22min</span>
+            </section>
+            <i class="fa fa-ellipsis-v text-white"></i>
+          </div>
+        </div>
+        
+        <div class="gamebox bg-cover rounded-2xl h-[9rem] p-3 flex flex-col justify-end 
+        bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(52,0,200,0.1)_50%,rgba(52,0,200,0.7)),url(src/images/game8.jpg)]">
+          <div class="desc flex justify-between items-center">
+            <section class="flex flex-col text-white">
+              <span class="flex flex-col text-white">Mega Man X</span>
+              <span class="stats">1993 | Rated T | 4hrs</span>
+            </section>
+            <i class="fa fa-ellipsis-v text-white"></i>
+          </div>
+        </div>
+       
+      </div>
     </div>
-
   </div>
-
 
 </body>
 </html>
